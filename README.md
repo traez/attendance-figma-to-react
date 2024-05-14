@@ -33,7 +33,7 @@ This is a Figma design to React code conversion Internship assignment. Design is
 
 ### Screenshot
 
-![](/public/images/screenshot-desktop.png)
+![](/public/screenshot-desktop.png)
 
 ### Links
 
