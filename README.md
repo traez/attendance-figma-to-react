@@ -38,7 +38,7 @@ This is a Figma design to React code conversion Internship assignment. Design is
 ### Links
 
 - Solution URL: [https://github.com/traez/attendance-figma-to-react](https://github.com/traez/attendance-figma-to-react)
-- Live Site URL: [https://attendance-figma-to-react.vercel.app/](https://attendance-figma-to-react.vercel.app/)
+- Live Site URL: [https://attendance-figma-to-react-trae-zeeofors-projects.vercel.app/](https://attendance-figma-to-react-trae-zeeofors-projects.vercel.app/)
 
 ## My process
 
