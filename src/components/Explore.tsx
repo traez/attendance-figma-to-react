@@ -7,10 +7,10 @@ export default function Explore() {
 
   return (
     <nav className="flex flex-col items-center justify-around h-full w-full text-center">
-      <article className="w-[345px] xs:w-[380px] sm:w-[510px] text-3xl xs:text-4xl sm:text-5xl font-black tracking-tighter">
+      <article className="w-[290px] xs:w-[380px] sm:w-[510px] text-3xl xs:text-4xl sm:text-5xl font-black tracking-tighter">
         Explore our pricing plans
       </article>
-      <article className="text-xs leading-5 w-[345px] xs:w-[380px] sm:w-[510px]">
+      <article className="text-xs leading-5 w-[290px] xs:w-[380px] sm:w-[510px]">
         Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam
         nulla purus, facilisis vitae odio ac, tempus aliquet dolor.
       </article>

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="font-trebuchetMs min-h-screen w-full grid grid-rows-[256px,minmax(776px,auto)] grid-cols-[auto] gap-1 p-1">
       <Explore />
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-1">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] gap-5">
         <Standard />
         <Medium />
         <Large />
