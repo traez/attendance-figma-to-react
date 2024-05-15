@@ -61,7 +61,7 @@ This is a Figma design to React code conversion Internship assignment. Design is
 
 - A second Figma to React "project" for me. Better understanding of the nuances involved in the task.  
 - Learned a trick to render classes without state, utilizing the "index" prop for conditional tailwind CSS class application.  
-- I forgot to add the "Recommended" Tab indicator above the "Medium" option. Will refactor in future.  
+- App to be further refactored and merged with main external project.  
 
 ### Continued development
 

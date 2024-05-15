@@ -23,9 +23,5 @@ export default function Home() {
 }
 
 /*
-<div className="justify-center px-4 py-2.5 text-sm font-medium tracking-normal leading-4 text-right text-white uppercase whitespace-nowrap bg-teal-600 rounded-xl">
-      Recommended
-    </div>
-
-https://www.figma.com/design/IKlybSP7jSdiYkNvDnEIIo/Peddlesoft-for-Business
+div
         */
