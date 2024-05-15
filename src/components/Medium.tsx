@@ -1,6 +1,11 @@
+"use client";
+import { useState, useEffect, useContext } from "react";
+import { StateContext } from "../app/StateProvider";
 import Image from "next/image";
 
 export default function Medium() {
+  const { selectedPlan } = useContext(StateContext)!;
+
   const websiteFeatures: string[] = [
     "Organization Website",
     "Membership Registration",
@@ -11,6 +16,9 @@ export default function Medium() {
     "Post Unlimited Ads Per Week",
     "Admin Accessibility",
   ];
+
+  const price = selectedPlan === 'yearly' ? 108 : 10;
+  const period = selectedPlan === 'yearly' ? '/Per Year' : '/Per Month';
 
   return (
     <div className="flex flex-col items-center pb-8 bg-white rounded-2x">
@@ -31,10 +39,10 @@ export default function Medium() {
           </menu>
           <menu className="flex gap-0 justify-center my-auto text-center">
             <div className="text-4xl font-bold tracking-tighter text-teal-600 leading-[56.16px]">
-              $10
+            ${price}
             </div>
             <div className="self-end mt-7 text-sm leading-6 text-slate-600">
-              /Per Month
+            {period}
             </div>
           </menu>
         </article>

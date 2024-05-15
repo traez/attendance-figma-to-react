@@ -13,6 +13,9 @@ interface StateContextType {
   textInput: string;
   setTextInput: React.Dispatch<React.SetStateAction<string>>;
   handleClear: () => void;
+  selectedPlan: 'monthly' | 'yearly';
+  setSelectedPlan: React.Dispatch<React.SetStateAction<'monthly' | 'yearly'>>;
+  handlePlanChange: (plan: 'monthly' | 'yearly') => void;
 }
 
 interface StateProviderProps {
@@ -22,6 +25,11 @@ interface StateProviderProps {
 export default function StateProvider({ children }: StateProviderProps) {
   const router = useRouter();
   const [textInput, setTextInput] = useState("");
+  const [selectedPlan, setSelectedPlan] = useState<'monthly' | 'yearly'>('monthly'); 
+
+  const handlePlanChange = (plan: 'monthly' | 'yearly') => {
+    setSelectedPlan(plan);
+  };
 
   const handleClear = () => {
     console.log("Hi Trae");
@@ -33,6 +41,9 @@ export default function StateProvider({ children }: StateProviderProps) {
         textInput,
         setTextInput,
         handleClear,
+        selectedPlan,
+        setSelectedPlan,
+        handlePlanChange,
       }}
     >
       {children}

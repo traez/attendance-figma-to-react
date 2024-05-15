@@ -1,6 +1,11 @@
+"use client";
+import { useState, useEffect, useContext } from "react";
+import { StateContext } from "../app/StateProvider";
 import Image from "next/image";
 
 export default function Large() {
+  const { selectedPlan } = useContext(StateContext)!;
+
   const websiteFeatures: string[] = [
     "Organization Website",
     "Membership Registration",
@@ -12,9 +17,12 @@ export default function Large() {
     "Admin Accessibility",
   ];
 
+  const price = selectedPlan === 'yearly' ? 228 : 20;
+  const period = selectedPlan === 'yearly' ? '/Per Year' : '/Per Month';
+
   return (
     <div className="flex flex-col items-center pb-8 bg-white rounded-2x">
-      <aside className="justify-center px-4 py-1.5 text-sm font-medium tracking-normal leading-4 text-right text-white whitespace-nowrap bg-red-600 rounded-t-xl">
+      <aside className="justify-center px-4 py-1.5 text-sm font-medium tracking-normal leading-4 text-right text-white whitespace-nowrap bg-white-600 rounded-t-xl text-opacity-0">
         RECOMMENDED
       </aside>
       <section className="flex flex-col items-center pb-8 bg-white rounded-2xl border-t-4 border-solid border-red-600">
@@ -31,10 +39,10 @@ export default function Large() {
           </menu>
           <menu className="flex gap-0 justify-center my-auto text-center">
             <div className="text-4xl font-bold tracking-tighter text-red-600 leading-[56.16px]">
-              $20
+              ${price}
             </div>
             <div className="self-end mt-7 text-sm leading-6 text-slate-600">
-              /Per Month
+            {period}
             </div>
           </menu>
         </article>

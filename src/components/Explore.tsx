@@ -1,12 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
+import { StateContext } from "../app/StateProvider";
 
 export default function Explore() {
-  const [selectedPlan, setSelectedPlan] = useState<'monthly' | 'yearly'>('monthly'); 
-
-  const handlePlanChange = (plan: 'monthly' | 'yearly') => {
-    setSelectedPlan(plan);
-  };
+  const { selectedPlan, handlePlanChange } = useContext(StateContext)!;
 
   return (
     <nav className="flex flex-col items-center justify-around h-full w-full text-center">
